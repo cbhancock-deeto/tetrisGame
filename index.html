@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <script src="app.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Russo+One&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
     </link>
@@ -11,6 +13,7 @@
 </head>
 
 <body>
+    <h1>TETRIS</h1>
     <div class="containerOut">
         <div class="containerIn">
             <div class="grid">
@@ -226,7 +229,12 @@
                 <div class="occupied"></div>
 
             </div>
-            <h3 id="score">Score:<span id="scoreNumber">0</span></h3>
+            <div>
+                <h3 id="score">Score:<span id="scoreNumber">0</span></h3>
+                <div class="center">
+                    <button id="start-button">Start</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>

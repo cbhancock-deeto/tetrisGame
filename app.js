@@ -2,9 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid');
     var squares = Array.from(document.querySelectorAll('.grid div'));
     const scoreDisplay = document.querySelector('#scoreNumber');
+    const startBtn = document.querySelector('#start-button');
     const row = 10;
     var score = 0;
     var timeIncrement = 600;
+    var timer;
     const startingPosition = 4;
     const startingRotation = 1;
     var currentRotation;
@@ -73,7 +75,17 @@ document.addEventListener('DOMContentLoaded', () => {
     currentTetro = theTetrominoes[randTetro][startingRotation];
     draw();
 
-    var timer = setInterval(moveDown, timeIncrement);
+
+        // add functionality to the button
+        startBtn.addEventListener('click',()=>{
+            if(timer){
+                clearInterval(timer);
+                timer = null;
+            } else{
+                draw();
+                timer = setInterval(moveDown,1000);
+            }
+        })
 
 
     function control(e) {

@@ -1,3 +1,15 @@
+
+h1 {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#score {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5em;
+}
+
 .grid {
     height: 400px;
     width: 200px;
@@ -19,9 +31,22 @@
     display: flex;
     width: 80%;
     margin: 0 auto;
-    background-color: #7698B3;
-
+    background-image: linear-gradient(to right, #7F557D, #7698B3,#7F557D);
 }
+
+button {
+    height: 5%;
+    background-color: #878d96;
+    width: 75px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.center {
+    display: flex;
+    justify-content: right;
+    float: right;
+    align-items: center;
+  }
 
 .containerIn {
     display: flex;
